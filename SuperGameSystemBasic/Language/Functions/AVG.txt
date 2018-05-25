@@ -1,0 +1,8 @@
+﻿AVG : result AVG(expr, expr...)
+Returns the Average of two or more numbers.
+example 1
+PRINT(AVG(1,5))
+output: 3
+example 2
+PRINT(AVG({2,9,10}))
+output: 7

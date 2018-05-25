@@ -1,0 +1,3 @@
+﻿GLYPHSET : result GLYPHSET(expr, array)
+Set a glyph int the TGA glyph array given the given index and 20x40(480) array
+refer to Tutorials for more information

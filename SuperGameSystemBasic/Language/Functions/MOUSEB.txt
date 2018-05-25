@@ -1,0 +1,2 @@
+﻿MOUSEB : result MOUSEB()
+returns the 1(true) if the mouse button is pressed, 0(false) otherwise

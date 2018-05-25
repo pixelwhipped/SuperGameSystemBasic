@@ -1,0 +1,2 @@
+﻿ISSTR : result ISSTR(expr)
+Returns 1 or TRUE if the variable is currenlty representing a string, false otherwise

@@ -1,0 +1,8 @@
+﻿ROUND : result ROUND(expr)
+Rounds a floating-point value to the nearest integral value
+example 1
+PRINT(ROUND(0.1))
+output: 1
+example 2
+PRINT(ROUND(2.5))
+output: 3

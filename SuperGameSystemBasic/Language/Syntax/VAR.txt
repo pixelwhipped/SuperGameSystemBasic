@@ -1,0 +1,16 @@
+﻿Defines a variable and assigns a value, let x equal something in the following expression
+VAR [VARIABLE] = (expr)
+ 
+example 2
+VAR x = 1
+PRINT(x)
+ 
+outputs 1
+ 
+example 2
+VAR x = "HELLO"
+PRINT(x + " WORLD")
+ 
+outputs HELLO WORLD
+ 
+See also LET

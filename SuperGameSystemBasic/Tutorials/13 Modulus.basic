@@ -1,0 +1,7 @@
+﻿REM Modulus operator example
+FOR i = 0 TO 20
+PRINT(i + " " + (i%2)) 
+PRINT()   
+NEXT i
+READTO i
+END

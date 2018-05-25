@@ -1,0 +1,7 @@
+﻿TIMER : result TIMER()
+        result TIMER(index)
+        result TIMER(index,expr)
+Calling TIMER without any values will return the total runtime of the current program being executed in milliseconds.
+Calling TIMER with 1 value with return the current elapsed time in milliseconds for that timer index or start a new timer at that index.
+Calling TIMER with 2 value with return the current elapsed time in milliseconds for that timer index or start a new timer at that index stating at the second value.
+refer to Tutorials for more information

@@ -1,0 +1,3 @@
+﻿SETMODE : result SETMODE(expr,expr)
+Sets the video mode, how many columns and rows.
+See Tutorials Pirates.basic

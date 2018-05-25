@@ -1,0 +1,5 @@
+﻿COS: result COS(expr)
+Returns the cosine of the specified angle in radians.
+example
+PRINT(COS(3.1415926535897931))
+output: 1

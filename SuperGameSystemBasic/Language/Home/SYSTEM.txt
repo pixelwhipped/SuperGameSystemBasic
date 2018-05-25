@@ -1,0 +1,7 @@
+﻿The SGS system follows many existing paradigms but also has some unusual aspects as well.
+The idea is to keep the language simple and familiar and allow the actual output to be both interesting and fun.
+SGS processes like a normal system except it's graphics are processed separately by the TGA(Text Graphics Accelerator) which is why the BLIT call must be made to update the screen.
+Built in functions have a degree of fault tolerance to prevent continual crashes.
+Timing in games is important this is why there are built in TIMER(s) which can be utilised for ease of use.
+Audio is available to a limited degree.
+Some of these are reasons YEILD is required to allow the system to process background tasks and also provides a means of controlling the speed of you programs and games.

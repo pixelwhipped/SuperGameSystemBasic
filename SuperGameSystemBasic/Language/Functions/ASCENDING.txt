@@ -1,0 +1,3 @@
+﻿ASCENDING : result ASCENDING(expr)
+returns an array with the elements sorted in ascending order
+See Tutorials

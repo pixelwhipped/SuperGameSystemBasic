@@ -1,0 +1,69 @@
+﻿System or Control
+ 
+ISDIM : result ISDIM(expr)
+Returns 1 or TRUE if the variable is currenlty representing an array or dimension, false otherwise
+ 
+ISNUM : result ISNUM(expr)
+Returns 1 or TRUE if the variable is currenlty representing a number, false otherwise
+ 
+ISSTR : result ISSTR(expr)
+Returns 1 or TRUE if the variable is currenlty representing a string, false otherwise
+ 
+KEYPRESSED : result KEYPRESSED(expr)
+Returns 1 or TRUE if the requsted key is pressed, does not block execution of preceeding code.
+refer to Tutorials for more information
+
+MOUSEB : result MOUSEB()
+returns the 1(true) if the mouse button is pressed, 0(false) otherwise
+ 
+MOUSEX : result MOUSEX()
+returns the current x(Column) location of the mouse on the screen
+ 
+MOUSEY : result MOUSEY()
+returns the current y(Row) location of the mouse on the screen
+ 
+TIMER : result TIMER()
+        result TIMER(index)
+		result TIMER(index,expr)
+Calling TIMER without any values will return the total runtime of the current program being executed in milliseconds.
+Calling TIMER with 1 value with return the current elapsed time in milliseconds for that timer index or start a new timer at that index.
+Calling TIMER with 2 value with return the current elapsed time in milliseconds for that timer index or start a new timer at that index stating at the second value.
+refer to Tutorials for more information
+  
+TODIM : result TODIM(expr)
+Returns the conversion of a value to a dimension
+example 1
+TODIM(1)
+returns {1}
+example 2
+TODIM("ABC")
+returns {33,34,35}
+See Constants GLYPHS
+ 
+TONUM : result TONUM(expr)
+Returns the conversion of a value to a number
+example 1
+TONUM("1")
+returns 1
+example 2
+TONUM({3,4,6})
+returns 3 - the first element in the array
+ 
+TOSTR : result TOSTR(expr)
+Returns the conversion of a value to a string
+example 1
+TOSTR(1)
+returns "1"
+example 2
+TOSTR({33,34,35})
+returns "ABC"
+See Constants GLYPHS
+ 
+YEILD : YEILD()
+        YEILD(expr)
+Tells the system to yeild for a period of time in milliseconds.
+Calling YEILD without a expressable value will use 100ms as its default value.
+This allow other system processes to work and should be used in FOR and WHILE loops or it may be forced.
+See Syntax FOR NEXT
+See Syntax WHILE WEND
+refer to Tutorials for more information

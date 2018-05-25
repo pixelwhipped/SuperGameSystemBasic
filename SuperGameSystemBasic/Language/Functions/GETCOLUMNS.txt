@@ -1,0 +1,2 @@
+﻿GETCOLUMNS : result GETCOLUMNS()
+Returns the screens column count.

@@ -1,0 +1,14 @@
+﻿RGBDACSET : result RGBDACSET(expr, expr...)
+            result RGBDACSET(expr, expr, expr, expr)
+Sets the color on the TGA pallet at the giving pallet index
+
+Returns the changed pallet index
+example
+LET r = 128
+LET g = 128
+LET b = 128
+DIM c = {r,g,b}
+REM set the color at 1 to the new color
+RGBDACSET(1,c)
+REM or
+RGBDACSET(1,r,g,b)

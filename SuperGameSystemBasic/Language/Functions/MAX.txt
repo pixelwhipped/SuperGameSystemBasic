@@ -1,0 +1,8 @@
+﻿MAX : result MAX(expr, expr...)
+Returns the larger of two or more numbers.
+example 1
+PRINT(MAX(1,5))
+output: 5
+example 2
+PRINT(MAX({2,9,10}))
+output: 10

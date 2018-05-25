@@ -1,0 +1,6 @@
+﻿RECT : RECT(x,y,width,heigh,color)
+       RECT(x,y,width,heigh,color,clear)
+Draws a rectangle from the give coordinates given a Color and optional Clear Flag
+example
+RECT(0,0,GETCOLUMNS()/2,GETROWS()/2,@YELLOW)
+output: Draws a Yellow Rectange from the top left to halfway to the bottom right

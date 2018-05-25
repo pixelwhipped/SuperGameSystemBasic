@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D5254FE7-D151-4C72-BF63-81D66BF9F9C8}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperGameSystemBasic</RootNamespace>
+    <AssemblyName>SuperGameSystemBasic</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>SuperGameSystemBasic_StoreKey.pfx</PackageCertificateKeyFile>
+    <MonoGamePlatform>WindowsStoreApp</MonoGamePlatform>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>B82A47476502DB3544ED29AF490074BF15FC89CC</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\WindowsUniversal\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncIO.cs" />
+    <Compile Include="Audio\Sample16Bit.cs" />
+    <Compile Include="Audio\Sample8Bit.cs" />
+    <Compile Include="Audio\SignalGenerators.cs" />
+    <Compile Include="Audio\SignalType.cs" />
+    <Compile Include="Audio\SongWriter.cs" />
+    <Compile Include="Audio\Tones.cs" />
+    <Compile Include="Audio\TouchToneGenerator.cs" />
+    <Compile Include="Audio\WaveHeader.cs" />
+    <Compile Include="Audio\WaveWriter.cs" />
+    <Compile Include="Audio\WaveWriter16Bit.cs" />
+    <Compile Include="Audio\WaveWriter8Bit.cs" />
+    <Compile Include="BasicOne.cs" />
+    <Compile Include="BasicOne.DevKit.cs" />
+    <Compile Include="BasicOne.Error.cs" />
+    <Compile Include="BasicOne.Functions.cs" />
+    <Compile Include="BasicOne.Running.cs" />
+    <Compile Include="Basic\BuiltInFunctions.cs" />
+    <Compile Include="Basic\FunctionStack.cs" />
+    <Compile Include="Basic\Interpreter.cs" />
+    <Compile Include="Basic\Lexer.cs" />
+    <Compile Include="Basic\LineState.cs" />
+    <Compile Include="Basic\Marker.cs" />
+    <Compile Include="Basic\Modifiers.cs" />
+    <Compile Include="Basic\Note.cs" />
+    <Compile Include="Basic\StopwatchWithOffset.cs" />
+    <Compile Include="Basic\Token.cs" />
+    <Compile Include="Basic\Value.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="EllipseDrawer.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Glyph.cs" />
+    <Compile Include="IdeState.cs" />
+    <Compile Include="IpsTimer.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="Terminal.cs" />
+    <Compile Include="UI\Input\Button.cs" />
+    <Compile Include="UI\Input\CheckBox.cs" />
+    <Compile Include="UI\Input\FileBrowser.cs" />
+    <Compile Include="UI\Input\IInput.cs" />
+    <Compile Include="UI\Input\Input.cs" />
+    <Compile Include="UI\Input\Label.cs" />
+    <Compile Include="UI\Input\MenuButton.cs" />
+    <Compile Include="UI\Input\ProgressBar.cs" />
+    <Compile Include="UI\Input\RadioButton.cs" />
+    <Compile Include="UI\Input\TextBlock.cs" />
+    <Compile Include="UI\Input\TextBox.cs" />
+    <Compile Include="UI\Window\Alert.cs" />
+    <Compile Include="UI\Window\AsciiArt.cs" />
+    <Compile Include="UI\Window\CalculatorWindow.cs" />
+    <Compile Include="UI\Window\CodeLine.cs" />
+    <Compile Include="UI\Window\ColorChooserWindow.cs" />
+    <Compile Include="UI\Window\Confirm.cs" />
+    <Compile Include="UI\Window\EditorWindow.cs" />
+    <Compile Include="UI\Window\FullWindow.cs" />
+    <Compile Include="UI\Window\GlyphEditor.cs" />
+    <Compile Include="UI\Window\GlyphWindow.cs" />
+    <Compile Include="UI\Window\IDrawingContext.cs" />
+    <Compile Include="UI\Window\IWindow.cs" />
+    <Compile Include="UI\Window\LanguageWindow.cs" />
+    <Compile Include="UI\Window\LoadDialog.cs" />
+    <Compile Include="UI\Window\MenuItemWindow.cs" />
+    <Compile Include="UI\Window\MenuWindow.cs" />
+    <Compile Include="UI\Window\PopupWindow.cs" />
+    <Compile Include="UI\Window\SaveDialog.cs" />
+    <Compile Include="UI\Window\Window.cs" />
+    <Compile Include="Utils\CodeUtils.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\SplashScreen.scale-200.pdn" />
+    <None Include="Assets\Square150x150Logo.scale-200.pdn" />
+    <None Include="Assets\StoreLogo.pdn" />
+    <None Include="Assets\Wide310x150Logo.scale-200.pdn" />
+    <None Include="project.json" />
+    <None Include="SuperGameSystemBasic_StoreKey.pfx" />
+    <None Include="Test.basic" />
+    <Content Include="Assets\Logo.scale-200.png" />
+    <Content Include="Assets\SmallLogo.scale-200.png" />
+    <Content Include="Assets\SmallLogo.targetsize-48_altform-unplated.png" />
+    <Content Include="Assets\SmallLogo48x48.png" />
+    <Content Include="Content\ColorMap.fx" />
+    <Content Include="Content\OverlayScanAndEdge.png" />
+    <Content Include="Content\OverlayScanSync.png" />
+    <Content Include="Content\Terminal20x24.png" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Language\Constants\SOUNDS.txt" />
+    <Content Include="Language\Functions\AVG.txt" />
+    <Content Include="Language\Functions\CONCAT.txt" />
+    <Content Include="Language\Functions\COUNT.txt" />
+    <Content Include="Language\Functions\DESCENDING.txt" />
+    <Content Include="Language\Functions\DIST.txt" />
+    <Content Include="Language\Functions\ELLIPSE.txt" />
+    <Content Include="Language\Functions\INSTR.txt" />
+    <Content Include="Language\Functions\ISDIM.txt" />
+    <Content Include="Language\Functions\ISNUM.txt" />
+    <Content Include="Language\Functions\ISSTR.txt" />
+    <Content Include="Language\Functions\LEFT.txt" />
+    <Content Include="Language\Functions\LERP.txt" />
+    <Content Include="Language\Functions\LINE.txt" />
+    <Content Include="Language\Functions\MOUSEB.txt" />
+    <Content Include="Language\Functions\MOUSEX.txt" />
+    <Content Include="Language\Functions\MOUSEY.txt" />
+    <Content Include="Language\Functions\RECT.txt" />
+    <Content Include="Language\Functions\REPEAT.txt" />
+    <Content Include="Language\Functions\REPLACE.txt" />
+    <Content Include="Language\Functions\REVERSE.txt" />
+    <Content Include="Language\Functions\RIGHT.txt" />
+    <Content Include="Language\Functions\SETMODE.txt" />
+    <Content Include="Language\Functions\SHUFFLE.txt" />
+    <Content Include="Language\Functions\SOUNDSIGNAL.txt" />
+    <Content Include="Language\Functions\SUBSTRING.txt" />
+    <Content Include="Language\Functions\SUM.txt" />
+    <Content Include="Language\Functions\TRIMEND.txt" />
+    <Content Include="Language\Functions\TRIMSTART.txt" />
+    <Content Include="Language\Functions\UNION.txt" />
+    <Content Include="Language\Functions\UNIQUE.txt" />
+    <Content Include="Language\Functions\[All Array].txt" />
+    <Content Include="Language\Home\WHATS NEW.txt" />
+    <Content Include="Language\Syntax\ARRAY.txt" />
+    <Content Include="Language\Syntax\FUNCTION.txt" />
+    <Content Include="Language\Syntax\OPERATORS.txt" />
+    <Content Include="Language\Syntax\VAR.txt" />
+    <Content Include="Tutorials\01 Hello.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\02 Text.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\03 input.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\04 Glyphs.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\05 Pallet.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\06 If Then Else.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\07 Circle.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\08 Operators.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\Functions\ASCENDING.txt" />
+    <Content Include="Tutorials\Brickout.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\Pirates.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\09 While.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\12 Functions.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\Tic Tac Toe.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\Snake.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\10 Strings.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\11 Arrays.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\13 Modulus.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tutorials\RiverRun.basic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="SuperGameSystemBasic_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Language\Constants\COLORS.txt" />
+    <Content Include="Language\Constants\Constants.txt" />
+    <Content Include="Language\Constants\GLYPHS.txt" />
+    <Content Include="Language\Constants\KEYS.txt" />
+    <Content Include="Language\Constants\OTHER.txt" />
+    <Content Include="Language\Functions\ABS.txt" />
+    <Content Include="Language\Functions\CLEAR.txt" />
+    <Content Include="Language\Functions\COS.txt" />
+    <Content Include="Language\Functions\CURSORX.txt" />
+    <Content Include="Language\Functions\CURSORXY.txt" />
+    <Content Include="Language\Functions\CURSORY.txt" />
+    <Content Include="Language\Functions\FILL.txt" />
+    <Content Include="Language\Functions\Functions.txt" />
+    <Content Include="Language\Functions\GETCOLUMNS.txt" />
+    <Content Include="Language\Functions\GETROWS.txt" />
+    <Content Include="Language\Functions\GLYPHGET.txt" />
+    <Content Include="Language\Functions\GLYPHSET.txt" />
+    <Content Include="Language\Functions\ISNAN.txt" />
+    <Content Include="Language\Functions\KEYPRESSED.txt" />
+    <Content Include="Language\Functions\LEN.txt" />
+    <Content Include="Language\Functions\MAX.txt" />
+    <Content Include="Language\Functions\MIN.txt" />
+    <Content Include="Language\Functions\NEG.txt" />
+    <Content Include="Language\Functions\PRINT.txt" />
+    <Content Include="Language\Functions\PRINTG.txt" />
+    <Content Include="Language\Functions\RAND.txt" />
+    <Content Include="Language\Functions\RGBDACGET.txt" />
+    <Content Include="Language\Functions\RGBDACRESET.txt" />
+    <Content Include="Language\Functions\RGBDACSET.txt" />
+    <Content Include="Language\Functions\ROUND.txt" />
+    <Content Include="Language\Functions\ROUNDDOWN.txt" />
+    <Content Include="Language\Functions\ROUNDUP.txt" />
+    <Content Include="Language\Functions\SIGN.txt" />
+    <Content Include="Language\Functions\SIN.txt" />
+    <Content Include="Language\Functions\SOUND.txt" />
+    <Content Include="Language\Functions\SOUNDQUE.txt" />
+    <Content Include="Language\Functions\SOUNDQUECLEAR.txt" />
+    <Content Include="Language\Functions\SQRT.txt" />
+    <Content Include="Language\Functions\TAN.txt" />
+    <Content Include="Language\Functions\TIMER.txt" />
+    <Content Include="Language\Functions\TODIM.txt" />
+    <Content Include="Language\Functions\TOLOWER.txt" />
+    <Content Include="Language\Functions\TONUM.txt" />
+    <Content Include="Language\Functions\TOSTR.txt" />
+    <Content Include="Language\Functions\TOUPPER.txt" />
+    <Content Include="Language\Functions\TRIM.txt" />
+    <Content Include="Language\Functions\YEILD.txt" />
+    <Content Include="Language\Functions\[All Audio].txt" />
+    <Content Include="Language\Functions\[All Graphics].txt" />
+    <Content Include="Language\Functions\[All Math].txt" />
+    <Content Include="Language\Functions\[All String].txt" />
+    <Content Include="Language\Functions\[All System].txt" />
+    <Content Include="Language\Home\Home.txt" />
+    <Content Include="Language\Home\IDE.txt" />
+    <Content Include="Language\Home\SYSTEM.txt" />
+    <Content Include="Language\Syntax\BLIT.txt" />
+    <Content Include="Language\Syntax\DIM.txt" />
+    <Content Include="Language\Syntax\ECHO.txt" />
+    <Content Include="Language\Syntax\END.txt" />
+    <Content Include="Language\Syntax\FOR NEXT.txt" />
+    <Content Include="Language\Syntax\IF THEN ELSE.txt" />
+    <Content Include="Language\Syntax\LET.txt" />
+    <Content Include="Language\Syntax\NOT.txt" />
+    <Content Include="Language\Syntax\READLINETO.txt" />
+    <Content Include="Language\Syntax\READTO.txt" />
+    <Content Include="Language\Syntax\REM.txt" />
+    <Content Include="Language\Syntax\Syntax.txt" />
+    <Content Include="Language\Syntax\WHILE WEND.txt" />
+    <Content Include="Language\Types\ARRAYS.txt" />
+    <Content Include="Language\Types\BOOLEANS.txt" />
+    <Content Include="Language\Types\NUMBERS.txt" />
+    <Content Include="Language\Types\STRINGS.txt" />
+    <Content Include="Language\Types\Types.txt" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="ToAdd.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

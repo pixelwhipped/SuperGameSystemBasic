@@ -1,0 +1,9 @@
+﻿NUMBERS
+Numbers are floating negatively or positivly signed numbers.
+ 
+examples
+1
+3.145
+-10
+ 
+See Syntax LET

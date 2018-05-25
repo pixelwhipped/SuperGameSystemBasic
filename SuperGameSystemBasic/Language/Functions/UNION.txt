@@ -1,0 +1,3 @@
+﻿UNION : result UNION(expr, expr...)
+Combines non duplicates elements to and array
+See Tutorials

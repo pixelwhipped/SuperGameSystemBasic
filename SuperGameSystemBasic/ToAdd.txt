@@ -1,0 +1,39 @@
+﻿Added Simple user definable Functions FUNCTION and ENDFUNCTION
+Added check with inline REM to prevent syntax to be auto capitalized
+Added Functions example
+Added SOUNDSIGNAL function
+Modified Sound to accept multiples of 4 parameters to allow for many notes on 1 line
+example SOUND(440,16384,800,@SINE,550,16384,500,@SINE,660,16384,800,@SINE) plays 3 notes
+Added constants for sound signal types @SINE, @SAWTOOTH, @TRIANGLE, @SQUARE, @NOISE
+
+
+Added VAR which can be used instead of LET
+Optimizations
+File Associations - Yay that was fun
+Tutorials
+  Operators
+  While
+  Strings
+
+new functions
+IsNum
+IsStr
+IsDim
+TrimStart
+TrimEnd
+Left
+Right
+Repeat
+SubString
+InStr
+Replace
+Reverse 
+Distance now applies Levinstine Distance to strings and Reals
+
+Shuffle
+Count
+Unique
+Union
+Concat
+Ascending
+Descending

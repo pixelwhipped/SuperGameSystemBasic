@@ -1,0 +1,27 @@
+﻿Repeats a group of statements a number of times.
+FOR [VARIABLE] = (expr) TO (expr) STEP (expr)
+   ....Statements
+NEXT [VARIABLE]
+ 
+example 2
+DIM numbers = 10
+REM DIM's are 0 based so we want to
+REM set the range 0 to 9
+FOR x = 0 TO LEN(numbers)-1
+numbers[x] = x
+NEXT x 
+result is numbers now = {0,1,2,3,4,5,6,7,8,9}
+ 
+example 2
+FOR x = 0 TO 10 STEP 2
+PRINT(x + " ")
+NEXT x 
+BLIT
+output 0 2 4 6 8 10
+ 
+example 3
+FOR x = 10 TO 0 STEP -2
+PRINT(x + " ")
+NEXT x 
+BLIT
+output 10 8 6 4 2 0

@@ -1,0 +1,10 @@
+﻿Defines a callable region of code.
+syntax where x is the name of the function
+1: FUNCTION x()
+2:   .....
+3:   code
+4:   .....
+5: ENDFUNCTION
+6: x()
+
+This defines a function from 1 to 5 which is called on line 6.

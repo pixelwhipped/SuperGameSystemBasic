@@ -1,0 +1,5 @@
+﻿TOLOWER : result TOLOWER(expr)
+Returns the string in lower case
+example:
+PRINT(TOLOWER("HELLO"))
+output: hello

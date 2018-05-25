@@ -1,0 +1,2 @@
+﻿GETROWS : result GERROWS()
+Returns the screens row count.

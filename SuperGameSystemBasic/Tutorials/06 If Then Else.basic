@@ -1,0 +1,37 @@
+﻿REM In this example we win go over conditional statements
+LET color  = @BLACK
+PRINT("Pick a color, press\n") 
+PRINT("1 for RED\n")
+PRINT("2 for GREEN\n")
+PRINT("3 for YELLOW\n")
+PRINT("or I will pick BLUE\n")
+REM read the option from the keyboard
+READTO c
+IF c ="1" THEN
+  color = @RED
+ELSEIF c ="2" THEN
+  color = @GREEN
+ELSEIF c ="3" THEN
+  color = @YELLOW
+ELSE
+  color = @BLUE
+ENDIF
+
+REM Set a timer so we can flip between the slected color and black
+TIMER(1,0)
+
+REM Loop forever untle Pause of Break is pressed
+WHILE TRUE
+  BLIT  
+  REM Is the timer has run long enough reset it
+  IF TIMER(1) > 200 THEN
+    TIMER(1,0)    
+    REM If the timer has run a short period fill in black
+  ELSEIF TIMER(1) > 100 THEN
+    CLEAR(@BLACK)    
+    REM Otherwise the timer has just started so fill in the selected color
+  ELSE
+    CLEAR(color)
+  ENDIF  
+WEND
+END

@@ -1,0 +1,12 @@
+﻿PRINT : PRINT()
+        PRINT(expr)
+        PRINT(expr, f)
+        PRINT(expr, f, b)
+        PRINT(expr, f, b, e)
+Prints a converted expression as a string with given parameters.
+no parameters will move the cursor down 1 row and to the first column
+1 parameter will print the converted expression to the cursors current location
+forecolor refers to the text color.
+backcolor referes to the background color of the character glyph
+effect can be the constants or there eqivelent value @NONE @HORIZONTAL @VERTICAL
+See Constants OTHER

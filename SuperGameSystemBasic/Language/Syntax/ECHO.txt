@@ -1,0 +1,2 @@
+﻿Echo turns on or off if keyboard blocking commands such as READTO and READLINETO should send the typed keys to the terminal chararacter(glyph) buffer. 
+ECHO (expr)

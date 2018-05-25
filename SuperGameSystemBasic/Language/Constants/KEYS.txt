@@ -1,0 +1,42 @@
+﻿KEYS
+ 
+Keyboard constants include textual Glyphs and are extended by; including additional keyboard inputs 
+ 
+CONSTANT                       V
+@KEYDOWN                       193
+@KEYLEFT                       194
+@KEYRIGHT                      195
+@KEYENTER                      196
+@KEYLEFTSHIFT                  197
+@KEYRIGHTSHIFT                 198
+@KEYLEFTCONTROL                199
+@KEYRIGHTCONTROL               200
+@KEYESC                        201
+@KEYF1                         202
+@KEYF2                         203
+@KEYF3                         204
+@KEYF4                         205
+@KEYF5                         206
+@KEYF6                         207
+@KEYF7                         208
+@KEYF8                         209
+@KEYF9                         210
+@KEYF10                        211
+@KEYF11                        212
+@KEYF12                        213
+@TAB                           214
+@ENTER                         215
+@BACKSPACE                     216
+@NOTUSED08                     217
+@NOTUSED09                     218
+@NOTUSED10                     219
+@NOTUSED11                     220
+@NOTUSED12                     221
+@NOTUSED13                     222
+@NOTUSED14                     223
+ 
+See Functions PRINT
+See Functions PRINTG
+See Functions KEYPRESSED
+See syntax READTO
+See syntax READLINE

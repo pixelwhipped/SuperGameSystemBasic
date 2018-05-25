@@ -1,0 +1,5 @@
+﻿REPLACE : result REPLACE(expr,expr,expr)
+Returns a new string with all occurrences of a specified string replaced with another specified string. 
+example:
+PRINT(REPLACE("i am a dog","dog","cat"))
+output: i am a cat

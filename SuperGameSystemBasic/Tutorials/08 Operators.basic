@@ -1,0 +1,22 @@
+﻿REM Logical Operator tests
+
+REM TRUE is equal to 1
+LET a = TRUE
+REM FALSE is equal to 0
+LET b = FALSE
+
+CURSORY(2)
+
+PRINT("a=a = " + (a=a) + " expected 1 \n")
+PRINT("a<>b = "+ (a<>b) + " expected 1\n")
+PRINT("a<>a = "+ (a<>a) + " expected 0\n")
+PRINT("a>=b = "+ (a>=b) + " expected 1\n")
+PRINT("a>a = "+ (a>a ) + " expected 0 \n")
+PRINT("NOT a=a = " + (NOT a=a) + " expected 0\n")
+
+WHILE NOT KEYPRESSED(@SPACE)
+  YEILD(100)
+  BLIT
+WEND
+END
+

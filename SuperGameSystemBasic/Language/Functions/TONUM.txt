@@ -1,0 +1,8 @@
+﻿TONUM : result TONUM(expr)
+Returns the conversion of a value to a number
+example 1
+TONUM("1")
+returns 1
+example 2
+TONUM({3,4,6})
+returns 3 - the first element in the array

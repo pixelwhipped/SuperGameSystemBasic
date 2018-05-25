@@ -1,0 +1,90 @@
+﻿Strings
+ 
+INSTR : result INSTR(expr, expr)
+        result INSTR(expr, expr, caseSensistive)
+Returns the index of a string in an a string
+example 1:
+PRINT(INSTR("hello","l"))
+output: 3
+example 2:
+PRINT(INSTR("hello","L",FALSE))
+output: 3
+example 3:
+PRINT(INSTR("hello","L",true))
+output: -1
+ 
+LEN : result LEN(expr)
+Returns the length of a string
+example:
+PRINT(LEN("hello"))
+output: 5
+ 
+LEFT : result LEFT(expr, x)
+Return the left x characters in a string
+example:
+PRINT(LEFT("12345",4))
+output: 1234
+ 
+REPEAT : result REPEAT(expr, x)
+Returns a string repeated x times
+example:
+PRINT(REPEAT("X",5))
+output: XXXXX
+  
+REPLACE : result REPLACE(expr,expr,expr)
+Returns a new string with all occurrences of a specified string replaced with another specified string. 
+example:
+PRINT(REPLACE("i am a dog","dog","cat"))
+output: i am a cat
+ 
+REVERSE : result REVERSE(expr)
+Returns a array or string in reverse
+example:
+PRINT(REVERSE("12345"))
+output: 54321
+  
+RIGHT : result RIGHT(expr, x)
+Return the right x characters in a string
+example:
+PRINT(LEFT("12345",4))
+output: 2345
+ 
+SUBSTRING : result (expr, y)
+          : result (expr, x, y)
+Returns a substring of y length starting at y or 0
+example 1:
+PRINT(SUBSTRING("abcd",3))
+output: abc
+example 1:
+PRINT(SUBSTRING("abcd",1,3))
+output: bcd
+ 
+TOLOWER : result TOLOWER(expr)
+Returns the string in lower case
+example:
+PRINT(TOLOWER("HELLO"))
+output: hello
+
+TOUPPER : result TOUPPER(expr)
+Returns the string in upper case
+example:
+PRINT(TOUPPER("hello"))
+output: HELLO
+ 
+TRIM: result TRIM(expr)
+Trims whitespace from the start and end of a string
+example:
+PRINT(LEN(TRIM(" hello ")))
+output: 5
+ 
+TRIMSTART : result TRIMSTART(expr)
+Trims whitespace from the start of a string
+example:
+PRINT(LEN(TRIMSTART(" hello ")))
+output: 6
+ 
+TRIMEND : result TRIMEND(expr)
+Trims whitespace from the end of a string
+example:
+PRINT(LEN(TRIMEND(" hello ")))
+output: 6

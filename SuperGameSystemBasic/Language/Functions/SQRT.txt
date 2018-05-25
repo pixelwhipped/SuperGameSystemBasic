@@ -1,0 +1,5 @@
+﻿SQRT : result SQRT(expr)
+Returns the square root of a specified number.
+example
+PRINT(SQRT(36))
+output: 6

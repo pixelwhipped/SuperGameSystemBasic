@@ -1,0 +1,3 @@
+﻿CLEAR : CLEAR()
+        CLEAR(index)
+Clears the screen to the nearest color to Black or the collor at the provided pallet index

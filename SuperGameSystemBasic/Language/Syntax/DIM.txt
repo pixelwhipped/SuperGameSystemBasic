@@ -1,0 +1,21 @@
+﻿Defines an array or dimension and assigns the value or size
+DIM [VARIABLE] = (expr)
+or
+ARRAY [VARIABLE] = (expr)
+ 
+example 1
+DIM x = 10
+or
+ARRAY x = 10
+result defines an array of 10 elements
+ 
+example 2
+DIM x = {0,1,2,3,4,5,6,7,8,9}
+result defines an array of 10 elements from 0 to 9
+ 
+values in an array can be refernced by index such as
+x[0] = 0
+or
+x[5] = 4
+ 
+See Also ARRAY

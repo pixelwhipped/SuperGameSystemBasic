@@ -1,0 +1,6 @@
+﻿ISNAN : result ISNAN(expr)
+Returns a value that indicates whether the specified value is not a number
+example
+LET x = "x"
+PRINT(ISNAN(TONUM(x)))
+output: 1

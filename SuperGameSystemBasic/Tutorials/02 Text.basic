@@ -1,0 +1,22 @@
+﻿REM In this example we will print with Colors
+
+REM Print our message in RED
+PRINT("ALL THE COLORS\n", @RED)
+
+REM now we will loop through all the colors
+REM and print them on the Background
+FOR x = 0 TO 15
+  PRINTG(@STAR,@WHITE,x)
+NEXT x
+
+REM Now let print somthing with the Text 
+REM Backwards
+PRINT()
+PRINT("WOW\n",@GREEN,@BLACK,@HORIZONTAL)
+REM wow that wont work lets try another
+CURSORXY(0,4)
+PRINT("YES\n",@GREEN,@BLACK,@HORIZONTAL)
+
+BLIT
+READTO
+END

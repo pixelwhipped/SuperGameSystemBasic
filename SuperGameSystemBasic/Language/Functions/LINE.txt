@@ -1,0 +1,6 @@
+﻿LINE : LINE(x1,y1,x2,y2,color)
+       LINE(x1,y1,x2,y2,color,clear)
+Draws a line from the give coordinates given a Color and optional Clear Flag
+example
+LINE(0,0,GETCOLUMNS(),GETROWS(),@YELLOW) 
+output: Draws a Yellow line from the top left to the bottom right

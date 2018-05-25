@@ -1,0 +1,4 @@
+﻿SOUNDSIGNAL: SOUNDSIGNAL()
+             SOUNDSIGNAL(type)
+Sets the default sound sinal type
+see constants @SINE, @SAWTOOTH, @TRIANGLE, @SQUARE, @NOISE

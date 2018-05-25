@@ -1,0 +1,145 @@
+﻿What's to Come
+ 
+Release v1.3
+File Association with *.basic
+Added VAR which can be used instead of LET
+Optimization
+Bug fix relating to /r in text files /n only allowed
+UI Tweaks
+Improved Glyph Art
+Experimental JoyPad
+  Mapped Joystick
+	A button to "A"
+	A button to "B"
+	Up button or Up Thumbstick Up to Up
+	Down button or Down Thumbstick Up to Down
+	Right button or Right Thumbstick Right to Right
+	Left button or Left Thumbstick Left to Left
+Added Mouse Functions see New Functions
+ 
+Tutorials
+  Operators
+  While
+  Strings
+  Arrays
+
+New Functions (In Upper Case)
+  IsNum
+  IsStr
+  IsDim
+  TrimStart
+  TrimEnd
+  Left
+  Right
+  Repeat
+  SubString
+  InStr
+  Replace
+  Reverse 
+  Dist now uses levenshtein Distance for strings with a length greater than 1
+  Shuffle
+  Count
+  Unique
+  Union
+  Concat
+  Ascending
+  Descending
+  SetMode for settig how many rows and colums ther system uses on the terminal
+  MouseX
+  MouseY
+  MouseB
+ 
+Release v1.2
+Not to many changes in the language but heaps of optimizations and improvements
+ 
+Bug Fixes
+ General in the editor UI
+ 
+Added Features
+ Syntax coloring
+ Indent Tool F8
+ 
+Added Tutorials
+ Snake.basic 
+
+Release v1.1
+Well it's been a productive time here.
+Not only have most the plans been pushed through a few bugs are gone, the language has had some improvements.
+A few new ideas and even more features than planned made it and more to come.
+ 
+Added Tutorials
+ 07 Circle.basic
+ 08 Operators.basic
+ Tic Tac Toe.basic
+
+Added Functions
+ SUM
+ AVG
+ LERP
+ DIST
+ FILL(updated)
+ LINE
+ RECT
+ ELLIPSE
+ 
+Bug Fixes
+ Editor new line add/split Fix
+ Editor Backspace when scrolled horizontally
+ Altered Autocase (kinda a bug but not really)
+ Found issue with expressions like 1--1
+Added/Updated Features
+ DIM/ARRAY can now be changed by simply using x = {1,2,3}
+ Mod, Modulus Opererator
+ Can copy a line in the editor with F6
+ Can copy all the code with F7
+ Can paste a 20x24 Bitmap to the GlyphEditor
+ Added Invert button to GlyphEditor
+ Operators in Language
+ TYPES info updated
+ Left Ctrl + Delete will copy the deleted line to the clipboard
+
+Planned updates are.
+From v1.0 Planned
+ More Tutorials for v1.1+
+ Some more Games for v1.1+
+  Snakes for v1.2+
+
+Newley Planed an potential as of v1.1
+ Show Last error when bug glyph clicked on and put in menu
+ Screenshots for v1.2 both png and capture video array
+ Arrays Tutorial v1.2
+ Programming book (future no version)
+ SGS Manual (future no version - no real use just fun) 
+ JoyPad v1.3+
+ Functions
+  More Sound v1.3+
+  GlyphShift v1.3+ 
+   To allow for smoother scrolling, will be tricky
+   but coding for old systems was and it gets you thinking :-)
+
+Previous Version planned and completed
+ 
+v1.1
+Tutorials
+ Snake
+ 
+v1.0
+Functions
+ LINE(done)
+ RECT(done)
+ RECTFILL(changed FILL to do both)
+ CIRCLE(done as ELLIPSE)
+ LERP(done)
+ SUM(done)
+ AVG(done)
+ DIST(done)
+ 
+IDE
+ Image To Fill for v1.2+
+ Box Art for v1.2+
+  
+ 
+Sincerely 
+ 
+ 
+Mr P Whipped.

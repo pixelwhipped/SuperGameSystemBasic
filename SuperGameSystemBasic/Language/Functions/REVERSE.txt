@@ -1,0 +1,5 @@
+﻿REVERSE : result REVERSE(expr)
+Returns a array or string in reverse
+example:
+PRINT(REVERSE("12345"))
+output: 54321

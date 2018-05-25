@@ -1,0 +1,5 @@
+﻿LEFT : result LEFT(expr, x)
+Return the left x characters in a string
+example:
+PRINT(LEFT("12345",4))
+output: 1234

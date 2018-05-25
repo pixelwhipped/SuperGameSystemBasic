@@ -1,0 +1,14 @@
+﻿REM Get an existing glyph or you could create
+REM one in the Glyph Editor
+DIM glyph = GLYPHGET(@FACE)
+REM Now loop though and Flip the bits
+FOR x = 0 TO LEN(glyph)-1
+  glyph[x] = NOT glyph[x]
+NEXT x
+
+REM Replace the Glyph
+GLYPHSET(@FACE,glyph)
+PRINTG(@FACE)
+BLIT
+READTO
+END

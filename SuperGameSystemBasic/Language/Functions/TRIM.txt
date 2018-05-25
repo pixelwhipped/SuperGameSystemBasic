@@ -1,0 +1,5 @@
+﻿TRIM: result TRIM(expr)
+Trims whitespace from the start and end of a string
+example:
+PRINT(LEN(TRIM(" hello ")))
+output: 5

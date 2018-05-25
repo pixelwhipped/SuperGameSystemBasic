@@ -1,0 +1,101 @@
+﻿Functions
+ 
+Functions, a function is a type of procedure or routine. The SGS System makes no distinction between a procedure and routine and all of wich take 0 or more arguments, and return an expressable value.
+The returned value may be redundant and most functions are desinged to tolerate a degree of fault.
+Unlike other langauges SGS Basic tries to make coding and development less prone to system failure.
+The cons of this is more unexpected results unless untested but less chance of the dredded system failure or halt.
+
+Funtions are divided up into
+Mathimatical and Numerical, Graphics, Audio, System or Control and String Functions
+ 
+~95~Mathimatical and Numerical
+ 
+ABS
+AVG
+COS
+DIST
+ISNAN
+LERP
+MAX
+MIN
+NEG
+RAND
+ROUND
+ROUNDDOWN
+ROUNDUP
+SIGN
+SIN
+SQRT
+SUM
+TAN
+ 
+~95~Graphics
+ 
+CLEAR
+CURSORX
+CURSORXY
+CURSORY
+ELLIPSE
+FILL
+GETCOLUMNS
+GETROWS
+GLYPHGET
+GLYPHSET
+LINE
+PRINT
+PRINTG
+RECT
+RGBDACGET
+RGBDACSET
+RGBDACRESET
+SETMODE
+ 
+~95~Audio
+ 
+SOUND
+SOUNDQUE
+SOUNDQUECLEAR
+SOUNDSIGNAL
+ 
+~95~System or Control
+ 
+ISDIM
+ISNUM
+ISSTR
+KEYPRESSED
+MOUSEB
+MOUSEX
+MOUSEY
+TIMER
+TODIM
+TONUM
+TOSTR
+YEILD
+See Syntax READTO
+See Syntax READLINETO
+ 
+~95~String
+ 
+INSTR
+LEN
+LEFT
+REPEAT
+REPLACE
+REVERSE
+RIGHT
+SUBSTRING
+TOLOWER
+TOUPPER
+TRIM
+TRIMSTART
+TRIMEND
+ 
+~95~Array
+ 
+ASCENDING
+CONCAT
+COUNT
+DESCENDING
+SHUFFLE
+UNIQUE
+UNION

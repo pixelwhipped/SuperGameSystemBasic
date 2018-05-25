@@ -1,0 +1,7 @@
+﻿GLYPHGET : result GLYPHGET(expr)
+Get an array of the glyph at the given index from the TGA glyph array.
+  
+example 
+DIM glyph = GLYPHGET(@FACE)
+result set and array of 20x24(480)values representing the glyph for @FACE
+refer to Tutorials for more information

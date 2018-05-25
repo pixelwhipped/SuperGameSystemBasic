@@ -1,0 +1,8 @@
+﻿NEG : result NEG(expr)
+Returns the negative of an absolute value
+example 1
+PRINT(NEG(-1))
+output: -1
+example 2
+PRINT(NEG(6))
+output: -6

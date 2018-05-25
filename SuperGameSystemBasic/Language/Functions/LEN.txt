@@ -1,0 +1,5 @@
+﻿LEN : result LEN(expr)
+Returns the length of a string
+example:
+PRINT(LEN("hello"))
+output: 5

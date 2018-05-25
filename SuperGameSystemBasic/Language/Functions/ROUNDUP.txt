@@ -1,0 +1,5 @@
+﻿ROUNDUP : result ROUNDUP(expr)
+Returns the largest integral value that is greater than or equal to the specified floating-point number
+example
+PRINT(ROUNDDOWN(2.1))
+output: 3

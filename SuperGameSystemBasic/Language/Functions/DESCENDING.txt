@@ -1,0 +1,3 @@
+﻿DESCENDING : result DESCENDING(expr)
+returns an array with the elements sorted in descending order
+See Tutorials

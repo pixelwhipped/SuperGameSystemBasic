@@ -1,0 +1,18 @@
+﻿FILL : FILL(x,y,width,{g,f,b,g,f,b....})
+       FILL : FILL(x,y,width,heigh,color)
+       FILL : FILL(x,y,width,heigh,color,clear)
+Fills the screen with a glyph array starting at the given column and row,
+Or can be used to fill a rectagle of given column, row,  width, height, color and optionally a clear flag.
+example 1
+CURSORXY(3,3)
+PRINT("HELLO",@RED)
+FILL(2,2,6,6,@GREEN,FALSE)
+output: will draw a green rectangle 6 high and wide with a "Hello" in Red inside.
+example 2
+CURSORXY(3,3)
+PRINT("HELLO",@RED)
+FILL(2,2,6,6,@GREEN,TRUE)
+output: will draw a green rectangle 6 high and wide, Hello has been covered.
+ 
+The array of glyph pattern must be arranged in sets of 3 with the glyph its forground its background and must atleast be as wide as the given width.
+Refer to Tutorials for more information

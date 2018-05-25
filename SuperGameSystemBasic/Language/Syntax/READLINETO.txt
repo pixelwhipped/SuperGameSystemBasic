@@ -1,0 +1,9 @@
+﻿Reads from the Keyboard keys until the ENTER key is pressed and blocks any other statements being called until a ENTER is received.
+READTO [VARIABLE]
+ 
+example
+ECHO TRUE
+PRINT("WHAT IS YOUR NAME?")
+READLINETO x
+PRINT("HELLO " + x)
+BLIT

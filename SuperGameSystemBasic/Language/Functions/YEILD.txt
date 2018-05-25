@@ -1,0 +1,8 @@
+﻿YEILD : YEILD()
+        YEILD(expr)
+Tells the system to yeild for a period of time in milliseconds.
+Calling YEILD without a expressable value will use 100ms as its default value.
+This allow other system processes to work and should be used in FOR and WHILE loops or it may be forced.
+See Syntax FOR NEXT
+See Syntax WHILE WEND
+refer to Tutorials for more information

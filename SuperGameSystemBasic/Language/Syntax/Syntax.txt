@@ -1,0 +1,20 @@
+﻿Syntax
+ 
+Variables
+LET
+DIM
+ 
+Program Flow and logic
+IF THEN ELSEIF ELSE ENDIF
+NOT
+END
+ 
+Loops
+FOR TO STEP NEXT
+WHILE WEND
+ 
+SPECIAL
+BLIT
+ECHO
+READTO
+READLINETO

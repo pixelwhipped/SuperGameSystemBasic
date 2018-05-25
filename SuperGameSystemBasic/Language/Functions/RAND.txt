@@ -1,0 +1,10 @@
+﻿RAND : result RAND()
+       result RAND(expr)
+       result RAND(expr,expr)
+       result RAND(expr...)
+Returns a random value
+example 1
+RAND() returns any positive integer
+RAND(expr) returns any positive integer upto the expression
+RAND(expr,expr) returns any integer between the expressions
+RAND(expr...) returns a random item from an array of numbers

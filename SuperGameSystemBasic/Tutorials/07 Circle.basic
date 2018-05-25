@@ -1,0 +1,30 @@
+﻿REM This tutorial will show you how to draw
+REM an ellipse or circle of various sizes 
+REM Use up down left right to resize
+REM Press Enter to toggle fill
+REM Press Space, Pause or Break to exit
+
+LET x = 1
+LET y = 1
+LET cFill = TRUE
+
+WHILE NOT KEYPRESSED(@SPACE)
+  CLEAR(@YELLOW)
+  IF KEYPRESSED(@KEYLEFT) THEN
+    x = MAX(x - 1,0)
+  ELSEIF KEYPRESSED(@KEYRIGHT) THEN
+    x = x + 1
+  ELSEIF KEYPRESSED(@KEYDOWN) THEN
+    y = y +1
+  ELSEIF KEYPRESSED(@KEYUP) THEN
+    y = MAX(y-1,0)
+  ELSEIF KEYPRESSED(@KEYENTER) THEN
+    cfill = NOT cFill
+  ENDIF
+  
+  REM fill the ellipse
+  ELLIPSE(1,1,x,y,@RED,cFill)
+  YEILD(100)
+  BLIT
+WEND
+END

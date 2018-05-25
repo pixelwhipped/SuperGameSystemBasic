@@ -1,0 +1,9 @@
+﻿TODIM : result TODIM(expr)
+Returns the conversion of a value to a dimension
+example 1
+TODIM(1)
+returns {1}
+example 2
+TODIM("ABC")
+returns {33,34,35}
+See Constants GLYPHS

@@ -1,0 +1,3 @@
+﻿KEYPRESSED : result KEYPRESSED(expr)
+Returns 1 or TRUE if the requsted key is pressed, does not block execution of preceeding code.
+refer to Tutorials for more information

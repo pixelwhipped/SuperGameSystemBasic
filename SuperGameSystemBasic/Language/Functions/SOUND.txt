@@ -1,0 +1,9 @@
+﻿SOUND : SOUND(frequency,amplitude,duration.....)
+Plays a sound with the specific frequency amplitude and duration in milliseconds.
+example 1
+SOUND(550,16384,500) 
+plays a sound at 550hz at the maximum amplitide of 16384 for 500ms
+example 2
+SOUND(550,16384,0,500,600,16384,500,1) 
+plays a sound at 550hz at the maximum amplitide of 16384 for 500ms using a sine tone then 
+a sound at 600hz at the maximum amplitide of 16384 for 500ms using the sawtooth tone

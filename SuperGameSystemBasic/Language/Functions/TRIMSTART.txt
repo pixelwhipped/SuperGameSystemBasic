@@ -1,0 +1,5 @@
+﻿TRIMSTART : result TRIMSTART(expr)
+Trims whitespace from the start of a string
+example:
+PRINT(LEN(TRIMSTART(" hello ")))
+output: 6

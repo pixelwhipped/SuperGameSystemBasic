@@ -1,0 +1,5 @@
+﻿RIGHT : result RIGHT(expr, x)
+Return the right x characters in a string
+example:
+PRINT(LEFT("12345",4))
+output: 2345

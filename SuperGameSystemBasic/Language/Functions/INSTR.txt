@@ -1,0 +1,12 @@
+﻿INSTR : result INSTR(expr, expr)
+        result INSTR(expr, expr, caseSensistive)
+Returns the index of a string in an a string
+example 1:
+PRINT(INSTR("hello","l"))
+output: 3
+example 2:
+PRINT(INSTR("hello","L",FALSE))
+output: 3
+example 3:
+PRINT(INSTR("hello","L",true))
+output: -1

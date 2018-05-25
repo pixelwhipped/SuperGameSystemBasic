@@ -1,0 +1,17 @@
+﻿TYPES
+Types where applicable will automatically cast to another type.
+for example "1" can be used as a NUMBER 
+ 
+BOOLEANS
+NUMBERS
+STRINGS
+ARRAYS
+ 
+How types work on SGS.
+Types are all stored as a data structures in the memory which is aware of their current type and associated data.
+This allows variables to be changed or converted. 
+They all share the same global space, this means there is no scope and can be altered anywhere in the proceeding code.
+ 
+See Functions TONUM
+See Functions TOSTR
+See Functions TODIM

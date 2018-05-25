@@ -1,0 +1,15 @@
+﻿REM Welcome to you first turotial
+REM in this we will print a some Text
+REM send it to the screen the wait.
+
+REM Print the message
+PRINT("HELLO WORLD")
+
+REM Send the graphics to the screen
+BLIT
+
+REM Wait for any key
+READTO
+
+REM End the program
+END

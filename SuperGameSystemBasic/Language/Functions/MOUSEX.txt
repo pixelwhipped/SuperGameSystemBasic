@@ -1,0 +1,2 @@
+﻿MOUSEX : result MOUSEX()
+returns the current x(Column) location of the mouse on the screen

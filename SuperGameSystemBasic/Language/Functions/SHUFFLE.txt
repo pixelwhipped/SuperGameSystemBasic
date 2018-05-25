@@ -1,0 +1,3 @@
+﻿SHUFFLE : result SHUFFLE(expr)
+Shuffles the elements in an array or string
+See Tutorials

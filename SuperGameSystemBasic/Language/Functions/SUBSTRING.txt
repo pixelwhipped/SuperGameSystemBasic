@@ -1,0 +1,9 @@
+﻿SUBSTRING : result (expr, y)
+          : result (expr, x, y)
+Returns a substring of y length starting at y or 0
+example 1:
+PRINT(SUBSTRING("abcd",3))
+output: abc
+example 1:
+PRINT(SUBSTRING("abcd",1,3))
+output: bcd

@@ -1,0 +1,23 @@
+﻿REM simple while loop demo
+VAR i = 0                                   
+PRINT("How many times shall I loop? (0 to 9) ")
+READTO i
+IF ISNAN(i) THEN
+  PRINT("\nThat is not a number.")      
+  READTO
+  END                      
+ELSE 
+  REM check a negative was not given and ensure number type
+  i = ABS(TONUM(i))
+  PRINT("\nCounting to " + i)
+ENDIF    
+
+VAR j = 1
+REM we will loop from 1 upto and including 9
+WHILE j<=i       
+  PRINT("\n"+j)
+  j = j + 1   
+  BLIT
+WEND                                        
+READTO
+END

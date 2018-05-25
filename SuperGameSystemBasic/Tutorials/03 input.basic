@@ -1,0 +1,30 @@
+﻿REM In the example we will get some
+REM information from the keyboard
+
+PRINT("HELLO WHAT IS YOUR NAME? ")
+
+REM Get the name from the keyboard
+REM This function waits until Enter is pressed
+READLINETO name
+PRINT()
+PRINT("HELLO " + name)
+
+REM Now we will get a secret 
+PRINT()
+PRINT("Tell me a secret")
+
+REM this will prevent the keyboard keys
+REM from being printed 
+ECHO FALSE
+
+READLINETO secret
+PRINT()
+PRINT("Your secret is " + secret)
+
+REM now lets wait for SPACE to be pressed
+PRINT("\nPress SPACE to end")
+
+WHILE NOT KEYPRESSED(@SPACE)
+  BLIT
+WEND
+END

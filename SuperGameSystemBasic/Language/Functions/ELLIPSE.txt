@@ -1,0 +1,8 @@
+﻿ELIPSE : ELIPSE(x,y,width,height,color)
+         ELIPSE(x,y,width,height,color,fill)
+         ELIPSE(x,y,width,height,color,fill,clear)
+Draws a filled or unfilled ellipse for a given column, row,  width, height, color and optionally a clear flag
+example
+ELLIPSE(1,1,5,5,@RED,cFill)
+output: Fills a red circle with a diameter of 5
+Refer to Tutorials for more information

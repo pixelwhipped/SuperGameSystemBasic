@@ -1,0 +1,6 @@
+﻿LERP : result LERP(expr, expr, expr)
+Returns the interpolation between two values fiven the amount expr3.
+expr1 + (expr2 - expr1) * expr3.
+example
+LET x = LERP(6,7,0.5)
+result: 6.5

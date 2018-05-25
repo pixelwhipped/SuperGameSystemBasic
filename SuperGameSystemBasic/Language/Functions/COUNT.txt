@@ -1,0 +1,5 @@
+﻿COUNT : result COUNT(expr)
+        result COUNT(expr, expr...)
+Returns the counts the elements in an array or string in total or where the calues match an expression
+See Tutorials
+See LEN

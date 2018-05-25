@@ -1,0 +1,3 @@
+﻿CONCAT : result CONCAT(expr..)
+Concatenates or Joins strings and arrays
+See Tutorials

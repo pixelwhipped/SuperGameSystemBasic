@@ -1,0 +1,5 @@
+﻿ABS : result ABS(expr)
+Returns the absolute value of a floating-point number.
+example:
+PRINT(ABS(1*-1))
+output: 1

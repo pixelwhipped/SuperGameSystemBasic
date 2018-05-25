@@ -1,0 +1,11 @@
+﻿Constants
+ 
+Constants are values that cannot be altered by the program during normal excutions.
+Generally constants are pre-fixed wiht a '@' with the exception of TRUE wich is 1 and FALSE being 0.
+ 
+Constants in the SGS are broken up into
+COLORS the Custom SGS pallete
+GLYPHS the 192 visiably representable console character
+KEYS the extended key range
+SOUNDS Sound Signal yype constants
+OTHER special and or usefull constants.

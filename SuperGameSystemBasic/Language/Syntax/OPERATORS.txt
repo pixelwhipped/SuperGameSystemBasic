@@ -1,0 +1,29 @@
+﻿OPERATORS
+ 
+Logical
+OR   
+AND  
+<>   Not equal
+<=   Less than or Equal To
+>=   Greather than or Equal To
+<    Less than
+>    Greater than
+=    Equal To
+examples
+PRINT("a=a = " + (a=a) + " expected 1 \n")
+PRINT("a<>b = "+ (a<>b) + " expected 1\n")
+PRINT("a<>a = "+ (a<>a) + " expected 0\n")
+PRINT("a>=b = "+ (a>=b) + " expected 1\n")
+PRINT("a>a = "+ (a>a ) + " expected 0 \n")
+PRINT("NOT a=a = " + (NOT a=a) + " expected 0\n")
+  
+Assignment
+=    Equals
+ 
+Mathematical
++    Addition  (Numbers and String)
+-    Subtraction
+/    Division
+*    Multiplication
+^    Power
+%    Modulus

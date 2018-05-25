@@ -1,0 +1,2 @@
+﻿RGBDACSET : RGBDACSET()
+Resets default color pallet 

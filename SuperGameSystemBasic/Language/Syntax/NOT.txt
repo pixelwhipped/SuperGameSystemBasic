@@ -1,0 +1,9 @@
+﻿Performs logical negation on a Boolean expression.
+NOT (expr)
+ 
+example 1
+PRINT(NOT TRUE)
+outputs 0
+ 
+PRINT(NOT FALSE)
+outputs 1

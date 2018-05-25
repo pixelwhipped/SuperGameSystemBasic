@@ -1,0 +1,31 @@
+﻿~95~Array
+ 
+ASCENDING : result ASCENDING(expr)
+returns an array with the elements sorted in ascending order
+See Tutorials
+ 
+CONCAT : result CONCAT(expr..)
+Concatenates or Joins strings and arrays
+See Tutorials
+ 
+COUNT : result COUNT(expr)
+        result COUNT(expr, expr...)
+Returns the counts the elements in an array or string in total or where the calues match an expression
+See Tutorials
+See LEN
+ 
+DESCENDING : result DESCENDING(expr)
+returns an array with the elements sorted in descending order
+See Tutorials
+  
+SHUFFLE : result SHUFFLE(expr)
+Shuffles the elements in an array or string
+See Tutorials
+ 
+UNIQUE : result UNIQUE(expr)
+Returns the unique elements in an array or string
+See Tutorials
+ 
+UNION : result UNION(expr, expr...)
+Combines non duplicates elements to and array
+See Tutorials

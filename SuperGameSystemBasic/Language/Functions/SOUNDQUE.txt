@@ -1,0 +1,2 @@
+﻿SOUNDQUE : result SOUNDQUE()
+Returns the count of currently playing sounds

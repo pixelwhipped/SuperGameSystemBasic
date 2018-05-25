@@ -1,0 +1,10 @@
+﻿SOUNDS
+ 
+Sound constants define signal generator types.
+See Functions SOUNDSIGNAL
+ 
+@SINE     = 0
+@SAWTOOTH = 1
+@TRIANGLE = 2
+@SQUARE   = 3
+@NOISE    = 4

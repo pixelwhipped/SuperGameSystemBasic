@@ -1,0 +1,43 @@
+﻿REM string examples
+VAR str = "dogcatdog"           
+PRINT(str+"\n")       
+REM use the left 6 characters
+str = LEFT(str,6)
+PRINT("left " + str+"\n")                 
+REM use last 3 characters
+str = RIGHT(str,3)
+PRINT("right " + str+"\n")              
+REM repace cat with dog
+str = REPLACE(str,"cat","dog")  
+PRINT("replace " + str+"\n")        
+REM repeat cat 3 times
+str = str + REPEAT("cat",3)                  
+PRINT("repeat " + str + "\n")                         
+REM count how many cats     
+PRINT("found cat " + COUNT(str,"cat")+" times\n")   
+REM get just the dog 3 characters starting from 0
+str = SUBSTRING(str,0,3)
+PRINT("substring " + str + "\n")                                   
+REM add some whitespace
+str = "   " + str
+PRINT(str+"\n")        
+REM remove it        
+str = TRIMSTART(str)
+PRINT("trimstart " + str + "\n")                                   
+REM sort ascending
+PRINT("ascending " + ASCENDING(str) + "\n")
+REM sort decending
+PRINT("decending " + DESCENDING(str) + "\n")
+REM reverse
+PRINT("reverse " + REVERSE(str) + "\n")
+REM shuffle                    
+str = str + "cat"
+PRINT("shuffle " + SHUFFLE(str) + "\n") 
+REM distance
+PRINT("dist (a,c) " + DIST("a","c") + "\n") 
+PRINT("levenshtine dist (dog,log) " + DIST("dog","log") + "\n") 
+WHILE NOT KEYPRESSED(@SPACE)
+  YEILD(100)
+  BLIT
+WEND
+END

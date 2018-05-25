@@ -1,0 +1,135 @@
+﻿Mathimatical and Numerical
+ 
+ABS : result ABS(expr)
+Returns the absolute value of a floating-point number.
+example:
+PRINT(ABS(1*-1))
+output: 1
+ 
+AVG : result AVG(expr, expr...)
+Returns the Average of two or more numbers.
+example 1
+PRINT(AVG(1,5))
+output: 3
+example 2
+PRINT(AVG({2,9,10}))
+output: 7
+ 
+COS: result COS(expr)
+Returns the cosine of the specified angle in radians.
+example
+PRINT(COS(3.1415926535897931))
+output: 1
+ 
+DIST: result DIST(expr, expr)
+      result DIST(expr, expr, expr, expr)
+Returns the distance between two point x1,y1,x2,y2 or between two strings or numbers
+If a string is longer that 1 character then the levenshtein distance algorithm is used which is really helpfull for dertermining string likeness
+Think of the example below as a triangle where a = 3 and b = 4
+the hypotenuse is 5,  Yep the teacher was right math is important.
+example
+PRINT(DIST(0,0,3,4))
+output: 5
+ 
+ISNAN : result ISNAN(expr)
+Returns a value that indicates whether the specified value is not a number
+example
+LET x = "x"
+PRINT(ISNAN(TONUM(x)))
+output: 1
+ 
+LERP : result LERP(expr, expr, expr)
+Returns the interpolation between two values fiven the amount expr3.
+expr1 + (expr2 - expr1) * expr3.
+example
+LET x = LERP(6,7,0.5)
+result: 6.5
+ 
+MAX : result MAX(expr, expr...)
+Returns the larger of two or more numbers.
+example 1
+PRINT(MAX(1,5))
+output: 5
+example 2
+PRINT(MAX({2,9,10}))
+output: 10
+ 
+MIN : result MIN(expr, expr...)
+Returns the smaller of two or more numbers.
+example 1
+PRINT(MIN(1,5))
+output: 1
+example 2
+PRINT(MIN({2,9,10}))
+output: 2
+ 
+NEG : result NEG(expr)
+Returns the negative of an absolute value
+example 1
+PRINT(NEG(-1))
+output: -1
+example 2
+PRINT(NEG(6))
+output: -6
+ 
+RAND : result RAND()
+       result RAND(expr)
+       result RAND(expr,expr)
+	   result RAND(expr...)
+Returns a random value
+example 1
+RAND() returns any positive integer
+RAND(expr) returns any positive integer upto the expression
+RAND(expr,expr) returns any integer between the expressions
+RAND(expr...) returns a random item from an array of numbers
+ 
+ROUND : result ROUND(expr)
+Rounds a floating-point value to the nearest integral value
+example 1
+PRINT(ROUND(0.1))
+output: 1
+example 2
+PRINT(ROUND(2.5))
+output: 3
+ 
+ROUNDDOWN : result ROUNDDOWN(expr)
+Returns the smallest integral value that is less than or equal to the specified floating-point number
+example
+PRINT(ROUNDDOWN(2.9))
+output: 2
+  
+ROUNDUP : result ROUNDUP(expr)
+Returns the largest integral value that is greater than or equal to the specified floating-point number
+example
+PRINT(ROUNDDOWN(2.1))
+output: 3
+ 
+SIGN : result SIGN(expr)
+Returns -1 if the value is less than zero, 0 of the value is equal to 0 or 1 if the value is greater than zero.
+ 
+SIN : result SIN(expr)
+Returns the sine of the specified angle in radians.
+example
+PRINT(SIN(3.1415926535897931))
+output: 0
+ 
+SQRT : result SQRT(expr)
+Returns the square root of a specified number.
+example
+PRINT(SQRT(36))
+output: 6
+ 
+SUM : result SUM(expr, expr...)
+Returns the SUM of two or more numbers.
+example 1
+PRINT(SUM(1,5))
+output: 6
+example 2
+PRINT(SUM({2,9,10}))
+output: 21
+ 
+TAN : result TAN(expr)
+Returns the tangent of the specified angle in radians.
+example
+PRINT(TAN(3.1415926535897931))
+output: 0

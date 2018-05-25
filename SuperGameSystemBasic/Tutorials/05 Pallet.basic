@@ -1,0 +1,19 @@
+﻿REM Here we will fade the current TGA pallet
+REM to white
+REM print current pallet
+FOR x = 0 TO 15
+  PRINT(" ",x,x)
+NEXT x
+
+WHILE NOT KEYPRESSED(@SPACE)
+  YEILD(10)
+  FOR x = 0 TO 15
+    REM Get the color at x
+    DIM p = RGBDACGET(x)    
+    REM increase the RGB intensities by 1
+    RGBDACSET(x,p[0]+1,p[1]+1,p[2]+1)
+  NEXT x  
+  BLIT
+WEND
+RGBDACRESET()
+END

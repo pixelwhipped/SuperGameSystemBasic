@@ -1,0 +1,7 @@
+﻿RGBDACGET : result RGBDACGET(expr)
+Returns the Red Green Blue componets of the color on the TGA pallet index provided by the expression.
+RGB componets are balues ranging from 0 to 255.  255 being the higest intensity
+example
+DIM p = RGBDACGET(2)
+PRINT("R=" + p[0] + " G=" + p[1] + " B=" + p[2])
+outputs R=0 G=128 B=0

@@ -1,0 +1,2 @@
+﻿SOUNDQUECLEAR : SOUNDQUECLEAR()
+Returns the count of stopped sounds

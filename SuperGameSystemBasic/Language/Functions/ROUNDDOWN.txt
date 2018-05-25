@@ -1,0 +1,5 @@
+﻿ROUNDDOWN : result ROUNDDOWN(expr)
+Returns the smallest integral value that is less than or equal to the specified floating-point number
+example
+PRINT(ROUNDDOWN(2.9))
+output: 2

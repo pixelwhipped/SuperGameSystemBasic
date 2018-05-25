@@ -1,0 +1,7 @@
+﻿REM. Short for Remark, REM is a statement that advises the interperiter to ignore this line
+ 
+REM ....Comments....
+ 
+example
+REM PRINT("DO NOT PRINT ME")
+PRINT("PRINT ME THOUGH")

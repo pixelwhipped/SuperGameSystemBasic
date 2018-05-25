@@ -1,0 +1,184 @@
+﻿REM ______   __     ______
+REM/\__  _\ /\ \   /\  ___\
+REM\/_/\ \/ \ \ \  \ \ \____
+REM   \ \_\  \ \_\  \ \_____\
+REM    \/_/   \/_/   \/_____/
+REM    ______   ______     ______
+REM   /\__  _\ /\  __ \   /\  ___\
+REM   \/_/\ \/ \ \  __ \  \ \ \____
+REM      \ \_\  \ \_\ \_\  \ \_____\
+REM       \/_/   \/_/\/_/   \/_____/
+REM       ______   ______     ______
+REM      /\__  _\ /\  __ \   /\  ___\
+REM      \/_/\ \/ \ \ \/\ \  \ \  __\
+REM         \ \_\  \ \_____\  \ \_____\
+REM          \/_/   \/_____/   \/_____/
+
+REM note there is a challenge to add AI
+
+ARRAY board =  {0,0,0,0,0,0,0,0,0}
+
+LET currentPlayer = 1
+LET px = 0
+LET py = 0
+LET winner = 0
+LET player1Wins = 0
+LET player2Wins = 0
+LET lastPattern = 0
+
+LET playerTurn = TRUE
+ARRAY lines = {0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,5,0,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0,161,5,0,0,5,0,0,5,0,0,5,0}
+
+PRINT("   TIC TAC TOE\n",@YELLOW)
+PRINT("   USE ARROW KEYS ")
+PRINTG(@ARROWLEFT)
+PRINTG(@ARROWUP)
+PRINTG(@ARROWRIGHT)
+PRINTG(@ARROWDOWN)
+PRINT(" TO move AND SPACE TO make a choice")
+
+WHILE NOT KEYPRESSED(@KEYESC)
+  CURSORXY(15,4)
+  IF currentPlayer = 1 THEN
+    PRINT("PLAYER 1",@RED)
+  ELSE
+    PRINT("PLAYER 2",@LIGHT_BLUE)
+  ENDIF
+  
+  CURSORXY(15,5)
+  PRINT("Naughts wins " + player1Wins,@RED)
+  CURSORXY(15,6)
+  PRINT("Crosses wins " + player2Wins,@LIGHT_BLUE)
+  
+  FILL(15,7,4,3,@BLACK,TRUE)
+  
+  IF NOT lastPattern = 0 THEN
+    IF lastPattern = 9 THEN
+      CURSORXY(15,7)
+      PRINT("DRAW",@GREEN)
+    ELSE
+      PRINT("    ")
+      FILL(15,7,3,3,@WHITE,TRUE)
+    ENDIF
+    
+    IF lastPattern = 1 THEN
+      LINE(15,7,17,7,@GREEN)
+    ELSEIF lastPattern = 2 THEN
+      LINE(15,8,17,8,@GREEN)
+    ELSEIF lastPattern = 3 THEN
+      LINE(15,9,17,9,@GREEN)
+    ELSEIF lastPattern = 4 THEN
+      LINE(15,7,15,9,@GREEN)
+    ELSEIF lastPattern = 5 THEN
+      LINE(16,7,16,9,@GREEN)
+    ELSEIF lastPattern = 6 THEN
+      LINE(17,7,17,9,@GREEN)
+    ELSEIF lastPattern = 7 THEN
+      LINE(15,7,17,9,@GREEN)
+    ELSEIF lastPattern = 8 THEN
+      LINE(17,7,15,9,@GREEN)
+    ENDIF       
+  ENDIF
+  
+  
+  IF NOT winner = 0 THEN
+    board = {0,0,0,0,0,0,0,0,0}
+    IF winner = 1 THEN
+      player1Wins = player1Wins + 1
+    ELSEIF winner = 2 THEN
+      player2Wins = player2Wins + 1
+    ENDIF
+    winner = 0
+  ENDIF
+  
+  FILL(0,4,11,lines)
+  
+  FOR y = 0 TO 2
+    FOR x = 0 TO 2
+      IF px = x AND py = y THEN
+        FILL((px*3)+px,(py*3)+py+4,3,3,@GRAY)
+      ENDIF
+      IF board[(y*3)+x] = 1 THEN
+        ELLIPSE((x*3)+x,(y*3)+y+4,3,3,@RED)
+      ELSEIF board[(y*3)+x] = 2 THEN
+        LINE((x*3)+x,(y*3)+y+4,(x*3)+x+2,(y*3)+y+4+2,@LIGHT_BLUE)
+        LINE((x*3)+x+2,(y*3)+y+4,(x*3)+x,(y*3)+y+4+2,@LIGHT_BLUE)
+      ENDIF
+    NEXT x
+  NEXT y
+  
+  REM playerTurn will always be true until we create AI
+  REM for the game. for now just 2 Human Players and AI
+  REM can be a challenge for learners to create
+  
+  IF playerTurn THEN
+    
+    IF KEYPRESSED(@KEYUP) THEN
+      py = MAX(py-1,0)
+    ELSEIF KEYPRESSED(@KEYDOWN) THEN
+      py = MIN(py+1,2)
+    ELSEIF KEYPRESSED(@KEYLEFT) THEN
+      px = MAX(px-1,0)
+    ELSEIF KEYPRESSED(@KEYRIGHT) THEN
+      px = MIN(px+1,2)
+    ELSEIF KEYPRESSED(@KEYENTER) OR KEYPRESSED(@SPACE) THEN
+      
+      IF board[(py*3)+px] = 0 THEN
+        board[(py*3)+px] = currentPlayer
+        
+        REM check win case
+        
+        IF currentPlayer = board[0] AND currentPlayer = board[1] AND currentPlayer = board[2] THEN
+          lastPattern = 1
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[3] AND currentPlayer = board[4] AND currentPlayer = board[5] THEN
+          lastPattern = 2
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[6] AND currentPlayer = board[7] AND currentPlayer = board[8] THEN
+          lastPattern = 3
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[0] AND currentPlayer = board[3] AND currentPlayer = board[6]THEN
+          lastPattern = 4
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[1] AND currentPlayer = board[4] AND currentPlayer = board[7] THEN
+          lastPattern = 5
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[2] AND currentPlayer = board[5] AND currentPlayer = board[8] THEN
+          lastPattern = 6
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[0] AND currentPlayer = board[4] AND currentPlayer = board[8] THEN
+          lastPattern = 7
+          winner = currentPlayer
+        ELSEIF currentPlayer = board[2] AND currentPlayer = board[4] AND currentPlayer = board[6] THEN
+          lastPattern = 8
+          winner = currentPlayer
+        ENDIF
+        
+        REM check draw
+        IF winner = 0 THEN
+          LET found = FALSE
+          FOR i = 0 TO 8
+            IF board[i] = 0 THEN
+              found = TRUE
+            ENDIF
+          NEXT i
+          IF NOT found THEN
+            board = {0,0,0,0,0,0,0,0,0}
+            lastPattern = 9
+          ENDIF
+          
+        ENDIF
+        
+        IF currentPlayer = 1 THEN
+          currentPlayer = 2
+        ELSE
+          currentPlayer = 1
+        ENDIF
+      ENDIF      
+    ELSE      
+      REM AI to be implemented here      
+    ENDIF    
+    BLIT
+    YEILD(100)
+  WEND
+END   

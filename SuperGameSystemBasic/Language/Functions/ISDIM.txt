@@ -1,0 +1,2 @@
+﻿ISDIM : result ISDIM(expr)
+Returns 1 or TRUE if the variable is currenlty representing an array or dimension, false otherwise

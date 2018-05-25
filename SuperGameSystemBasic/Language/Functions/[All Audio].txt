@@ -1,0 +1,16 @@
+﻿~95~Audio
+ 
+SOUND : SOUND(frequency,amplitude,duration)
+Plays a sound with the specific frequency amplitude and duration in milliseconds.
+example SOUND(550,16384,500) plays a sound at 550hz at the maximum amplitide of 16384 for 500ms
+ 
+SOUNDQUE : result SOUNDQUE()
+Returns the count of currently playing sounds
+ 
+SOUNDQUECLEAR : SOUNDQUECLEAR()
+Returns the count of stopped sounds
+ 
+SOUNDSIGNAL: SOUNDSIGNAL()
+             SOUNDSIGNAL(type)
+Sets the default sound sinal type
+see constants @SINE, @SAWTOOTH, @TRIANGLE, @SQUARE, @NOISE

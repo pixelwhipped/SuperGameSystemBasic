@@ -1,0 +1,3 @@
+﻿CURSORY : result CURSORY()
+          result CURSORY(expr)
+Returns the ROW the Cursor currently is on and Sets the Cursor to the given Row if a value is provided

@@ -1,0 +1,11 @@
+﻿Welcome to Super Game System Basic.
+           ~161~~161~~161~  ~161~~161~~161~  ~161~~161~~161~~163~~163~~163~~163~~165~~165~~165~~165~~165~~165~
+           ~161~    ~161~    ~161~
+           ~161~~161~~161~  ~161~    ~161~~161~~161~
+             ~161~  ~161~ ~161~    ~161~
+  ~165~~165~~165~~165~~165~~163~~163~~163~~163~~161~~161~~161~  ~161~~161~~161~  ~161~~161~~161~
+ 
+The Super Game System is a Fictional 80's style system focusing on game development in a Basic style language.
+Super Game System Basic is a Fictional Basic like programming language.
+ 
+SGS intention is to be a fun easy way to learn the basics of programming and how programs work with a forgiving language and simple enough to use development kit.

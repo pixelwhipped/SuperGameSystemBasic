@@ -1,0 +1,5 @@
+﻿SIN : result SIN(expr)
+Returns the sine of the specified angle in radians.
+example
+PRINT(SIN(3.1415926535897931))
+output: 0

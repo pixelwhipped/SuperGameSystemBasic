@@ -1,0 +1,9 @@
+﻿TOSTR : result TOSTR(expr)
+Returns the conversion of a value to a string
+example 1
+TOSTR(1)
+returns "1"
+example 2
+TOSTR({33,34,35})
+returns "ABC"
+See Constants GLYPHS

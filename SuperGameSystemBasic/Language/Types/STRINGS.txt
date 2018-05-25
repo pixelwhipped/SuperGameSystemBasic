@@ -1,0 +1,7 @@
+﻿STRINGS
+Strings are arrays of character(Glyphs)
+ 
+example 
+LET x = "HELLO"
+  
+See Syntax LET

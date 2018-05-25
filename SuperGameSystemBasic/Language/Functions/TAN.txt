@@ -1,0 +1,5 @@
+﻿TAN : result TAN(expr)
+Returns the tangent of the specified angle in radians.
+example
+PRINT(TAN(3.1415926535897931))
+output: 0

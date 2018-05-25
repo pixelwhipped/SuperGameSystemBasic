@@ -1,0 +1,5 @@
+﻿TRIMEND : result TRIMEND(expr)
+Trims whitespace from the end of a string
+example:
+PRINT(LEN(TRIMEND(" hello ")))
+output: 6

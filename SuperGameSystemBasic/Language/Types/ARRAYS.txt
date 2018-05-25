@@ -1,0 +1,15 @@
+﻿DIM or ARRAY
+DIM or ARRAY is a 1 Dimensional Array of NUMBERS
+ 
+example 1
+DIM x = 10
+or
+ARRAY x = 10
+creates and empty array of 10 items
+ 
+example 2
+DIM x = {1,2,3,4}
+creates an array of 4 NUMBERS
+ 
+See NUMBERS
+See Syntax DIM

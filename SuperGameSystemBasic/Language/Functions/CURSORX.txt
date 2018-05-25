@@ -1,0 +1,3 @@
+﻿CURSORX : result CURSORX()
+          result CURSORX(expr)
+Returns the Column the Cursor currently is on and Sets the Cursor to the given Column if a value is provided 

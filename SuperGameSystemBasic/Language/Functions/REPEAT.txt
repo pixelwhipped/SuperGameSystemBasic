@@ -1,0 +1,5 @@
+﻿REPEAT : result REPEAT(expr, x)
+Returns a string repeated x times
+example:
+PRINT(REPEAT("X",5))
+output: XXXXX

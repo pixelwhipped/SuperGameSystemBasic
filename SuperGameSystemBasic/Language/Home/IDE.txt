@@ -1,0 +1,28 @@
+﻿IDE
+The IDE(Integrated Development Environment) provides tools and utilities to create a play your games.
+Important! remember the BREAK or PAUSE key can be used to terminate executing programs.
+  
+MENU
+The menu provides a access to all windows and saving and loading files.
+ 
+WINDOW
+Windows can be selected by clicking of using F2 to cycle though open windows.
+Windows may suggest or provide icons for performing additional functions.
+ 
+DIALOGS 
+Dialogs prevent any other window being selected until the required action is taken.
+  
+LOADING
+Loading files can be performed by selecting Load from the File menu. From here you can open *.basic files from the Projects space on the SGS system or Removable Devices.
+Navigate up a folder or device by slick or selecting the [..] options.
+ 
+SAVING
+Saving files can be performed by selecting Save or Save As from the File menu. From here you can save the currently open files in the Editor to the Projects space on the SGS system or Removable Devices.
+Navigate up a folder or device by slick or selecting the [..] options.
+  
+EDITOR
+The editor is where all the coding is done. You can paste from an external clipboard by pressing F4.
+Lines numbers are shown on the side and in the event of an exception or program crash you should be easily be able to identify the offending line by the ~180~ shown in the line column.
+To run your program press the ~146~ button of by pressing F5
+You can copy a Line by pressing F6 or all the Code by pressing F7
+Press F8 to indent all your code

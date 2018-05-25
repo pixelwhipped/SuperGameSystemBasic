@@ -1,0 +1,23 @@
+﻿REM Function example
+VAR a = 0 
+VAR b = 0
+WHILE NOT KEYPRESSED(@SPACE)  
+  a = 0 REM reset a to 0
+  b=b+1 REM count how many times we have counted to 10
+  FUNCTION f()
+    a=a+1        
+    IF a <= 10 THEN 
+      CURSORXY(1,1)  
+      PRINT(a+" ")         
+      BLIT
+      REM Note calling f() from within a function
+      REM will casue a delay while the stack is unrolled
+      f() REM not at 10 yet keep counting
+    ENDIF                     
+  ENDFUNCTION                           
+  f() REM call the function      
+  CURSORXY(1,2)
+  PRINT(b)
+  BLIT
+WEND
+END

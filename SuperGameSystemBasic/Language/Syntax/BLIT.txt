@@ -1,0 +1,3 @@
+﻿Tells the system that the terminal chararacter(glyph) buffer can be sent to the screen.
+Nothing will go to the screen unless this is called or a blocking method such as READTO or READLINETO is called
+BLIT

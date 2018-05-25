@@ -1,0 +1,8 @@
+﻿MIN : result MIN(expr, expr...)
+Returns the smaller of two or more numbers.
+example 1
+PRINT(MIN(1,5))
+output: 1
+example 2
+PRINT(MIN({2,9,10}))
+output: 2

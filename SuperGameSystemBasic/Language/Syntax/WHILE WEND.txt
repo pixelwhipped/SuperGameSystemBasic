@@ -1,0 +1,19 @@
+﻿Repeats a group of statements a number of times.
+WHILE [CONDITION]
+  ...Statements
+WEND
+
+example 1
+WHILE TRUE
+YEILD(10)
+PRINT(".")
+WEND
+ 
+Will print "." forever fast intil the the BREAK or PAUSE key cause the executing program to stop
+ 
+example 2
+WHILE NOT KEYPRESSED(@KEYENTER)
+PRINT(".")
+WEND
+ 
+Repeats the PRINT function until ENTER is pressed

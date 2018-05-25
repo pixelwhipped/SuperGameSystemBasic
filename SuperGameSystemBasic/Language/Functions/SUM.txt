@@ -1,0 +1,8 @@
+﻿SUM : result SUM(expr, expr...)
+Returns the SUM of two or more numbers.
+example 1
+PRINT(SUM(1,5))
+output: 6
+example 2
+PRINT(SUM({2,9,10}))
+output: 21

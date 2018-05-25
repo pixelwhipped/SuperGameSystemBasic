@@ -1,0 +1,5 @@
+﻿TOUPPER : result TOUPPER(expr)
+Returns the string in upper case
+example:
+PRINT(TOUPPER("hello"))
+output: HELLO

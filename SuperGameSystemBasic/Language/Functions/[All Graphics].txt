@@ -1,0 +1,133 @@
+﻿Graphics
+ 
+CLEAR : CLEAR()
+        CLEAR(index)
+Clears the screen to the nearest color to Black or the collor at the provided pallet index
+  
+CURSORX : result CURSORX()
+          result CURSORX(expr)
+Returns the Column the Cursor currently is on and Sets the Cursor to the given Column if a value is provided 
+ 
+CURSORXY : CURSORXY(column,row)
+Sets the cursor to ste specified Row and Column
+  
+CURSORY : result CURSORY()
+          result CURSORY(expr)
+Returns the ROW the Cursor currently is on and Sets the Cursor to the given Row if a value is provided
+
+ELIPSE : ELIPSE(x,y,width,height,color)
+         ELIPSE(x,y,width,height,color,fill)
+         ELIPSE(x,y,width,height,color,fill,clear)
+Draws a filled or unfilled ellipse for a given column, row,  width, height, color and optionally a clear flag
+example
+ELLIPSE(1,1,5,5,@RED,cFill)
+output: Fills a red circle with a diameter of 5
+Refer to Tutorials for more information
+ 
+FILL : FILL(x,y,width,{g,f,b,g,f,b....})
+       FILL : FILL(x,y,width,heigh,color)
+       FILL : FILL(x,y,width,heigh,color,clear)
+Fills the screen with a glyph array starting at the given column and row,
+Or can be used to fill a rectagle of given column, row,  width, height, color and optionally a clear flag.
+example 1
+CURSORXY(3,3)
+PRINT("HELLO",@RED)
+FILL(2,2,6,6,@GREEN,FALSE)
+output: will draw a green rectangle 6 high and wide with a "Hello" in Red inside.
+example 2
+CURSORXY(3,3)
+PRINT("HELLO",@RED)
+FILL(2,2,6,6,@GREEN,TRUE)
+output: will draw a green rectangle 6 high and wide, Hello has been covered.
+ 
+The array of glyph pattern must be arranged in sets of 3 with the glyph its forground its background and must atleast be as wide as the given width.
+Refer to Tutorials for more information
+  
+GETCOLUMNS : result GETCOLUMNS()
+Returns the screens column count.
+
+GETROWS : result GERROWS()
+Returns the screens row count.
+  
+GLYPHGET : result GLYPHGET(expr)
+Get an array of the glyph at the given index from the TGA glyph array.
+ 
+example 
+DIM glyph = GLYPHGET(@FACE)
+result set and array of 20x24(480)values representing the glyph for @FACE
+refer to Tutorials for more information
+  
+GLYPHSET : result GLYPHSET(expr, array)
+Set a glyph int the TGA glyph array given the given index and 20x40(480) array
+refer to Tutorials for more information
+   
+LINE : LINE(x1,y1,x2,y2,color)
+       LINE(x1,y1,x2,y2,color,clear)
+Draws a line from the give coordinates given a Color and optional Clear Flag
+example
+LINE(0,0,GETCOLUMNS(),GETROWS(),@YELLOW) 
+output: Draws a Yellow line from the top left to the bottom right
+  
+PRINT : PRINT()
+        PRINT(expr)
+        PRINT(expr, f)
+        PRINT(expr, f, b)
+        PRINT(expr, f, b, e)
+Prints a converted expression as a string with given parameters.
+no parameters will move the cursor down 1 row and to the first column
+1 parameter will print the converted expression to the cursors current location
+forecolor refers to the text color.
+backcolor referes to the background color of the character glyph
+effect can be the constants or there eqivelent value @NONE @HORIZONTAL @VERTICAL
+See Constants OTHER 
+ 
+PRINTG : PRINTG()
+         PRINTG(expr)
+         PRINTG(expr, f)
+         PRINTG(expr, f, b)
+         PRINTG(expr, f, b, e)
+Prints a converted expression as a glyph with given parameters.
+no parameters will move the cursor down 1 row and to the first column
+1 parameter will print the converted expression to the cursors current location
+forecolor refers to the text color.
+backcolor referes to the background color of the character glyph
+effect can be the constants or there eqivelent value @NONE @HORIZONTAL @VERTICAL
+See Constants OTHER 
+See Constants GLYPH
+ 
+RECT : RECT(x,y,width,heigh,color)
+       RECT(x,y,width,heigh,color,clear)
+Draws a rectangle from the give coordinates given a Color and optional Clear Flag
+example
+RECT(0,0,GETCOLUMNS()/2,GETROWS()/2,@YELLOW)
+output: Draws a Yellow Rectange from the top left to halfway to the bottom right
+ 
+RGBDACSET : RGBDACSET()
+Resets default color pallet 
+ 
+RGBDACGET : result RGBDACGET(expr)
+Returns the Red Green Blue componets of the color on the TGA pallet index provided by the expression.
+RGB componets are balues ranging from 0 to 255.  255 being the higest intensity
+example
+DIM p = RGBDACGET(2)
+PRINT("R=" + p[0] + " G=" + p[1] + " B=" + p[2])
+outputs R=0 G=128 B=0
+ 
+RGBDACSET : result RGBDACSET(expr, expr...)
+            result RGBDACSET(expr, expr, expr, expr)
+Sets the color on the TGA pallet at the giving pallet index
+
+Returns the changed pallet index
+example
+LET r = 128
+LET g = 128
+LET b = 128
+DIM c = {r,g,b}
+REM set the color at 1 to the new color
+RGBDACSET(1,c)
+REM or
+RGBDACSET(1,r,g,b)
+ 
+SETMODE : result SETMODE(expr,expr)
+Sets the video mode, how many columns and rows.
+See Tutorials Pirates.basic

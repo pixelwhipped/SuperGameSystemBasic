@@ -1,0 +1,2 @@
+﻿CURSORXY : CURSORXY(column,row)
+Sets the cursor to ste specified Row and Column

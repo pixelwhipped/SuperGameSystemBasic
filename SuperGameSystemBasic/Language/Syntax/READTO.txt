@@ -1,0 +1,8 @@
+﻿Reads from the Keyboard a single key and blocks any other statements being called until a key is received.
+READTO [VARIABLE]
+ 
+example
+ECHO TRUE
+READTO x
+PRINT("YOU TYPED " + x)
+BLIT

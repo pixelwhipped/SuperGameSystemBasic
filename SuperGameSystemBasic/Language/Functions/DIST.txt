@@ -1,0 +1,9 @@
+﻿DIST: result DIST(expr, expr)
+      result DIST(expr, expr, expr, expr)
+Returns the distance between two point x1,y1,x2,y2 or between two strings or numbers
+If a string is longer that 1 character then the levenshtein distance algorithm is used which is really helpfull for dertermining string likeness
+Think of the example below as a triangle where a = 3 and b = 4
+the hypotenuse is 5,  Yep the teacher was right math is important.
+example
+PRINT(DIST(0,0,3,4))
+output: 5
